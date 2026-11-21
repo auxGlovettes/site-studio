@@ -2,22 +2,49 @@
 
 Site d'une seule page (`index.html`), sans dépendance, hébergé gratuitement sur GitHub Pages.
 
-## Avant de publier
-1. Les photos et le lien viennent de l'annonce Airbnb (airbnb.com/h/foxyglovy). Si l'annonce change, les photos peuvent disparaître : pour plus de fiabilité, ajouter les photos dans le dossier `photos/` avec ces noms (JPEG, ~1600 px de large maxi) :
-   `hero.jpg`, `sejour.jpg`, `cuisine.jpg`, `alcove.jpg`, `cabine.jpg`, `salle-de-bain.jpg`, `vue.jpg`.
-   Une photo absente est simplement remplacée par un fond neutre.
+- Dépôt : `auxGlovettes/site-studio`
+- Adresse du site : https://auxglovettes.fr (domaine défini dans le fichier `CNAME`, ne pas le supprimer)
+- Annonce : https://www.airbnb.com/h/foxyglovy
 
-## Publier sur GitHub Pages
-1. Créer un compte sur github.com (gratuit).
-2. « New repository » → nom : `studio-glovettes` → Public → Create.
-3. « Add file » → « Upload files » → glisser `index.html`, `README.md` et le dossier `photos` → Commit.
-4. Settings → Pages → Source : « Deploy from a branch » → Branch : `main` / `(root)` → Save.
-5. Après 1 à 2 minutes, le site est en ligne à : `https://<votre-pseudo>.github.io/studio-glovettes/`
+## Contenu du dépôt
 
-## Modifier ensuite
-- Petite retouche : ouvrir `index.html` sur GitHub → icône crayon → Commit. Le site se met à jour tout seul.
-- Avec Claude Code : cloner le dépôt, demander la modification, puis `git push`.
+| Fichier | Rôle |
+|---|---|
+| `index.html` | Page en français (texte, styles, mise en page) |
+| `en/index.html` | Même page en anglais, accessible sur `/en/` |
+| `photos/` | Photos du studio, partagées par les deux langues |
+| `CNAME` | Nom de domaine personnalisé pour GitHub Pages |
 
-## Plus tard (optionnel)
-- Nom de domaine perso (~10 €/an) : Settings → Pages → Custom domain.
-- Une fois le classement obtenu : ajouter les étoiles et le numéro d'enregistrement en mairie.
+## Photos
+
+Les photos sont dans le dossier `photos/` (JPEG, 1 200 px de large, issues de l'annonce Airbnb) :
+
+| Fichier | Utilisation |
+|---|---|
+| `hero.jpg` | Image d'en-tête et aperçu lors d'un partage du lien |
+| `sejour.jpg` | Galerie : séjour et lit double |
+| `cabine.jpg` | Galerie : coin cabine avec lits superposés |
+| `cuisine.jpg` | Galerie : cuisine |
+| `balcon.jpg` | Galerie : balcon |
+| `vue.jpg` | Galerie : vue sur la forêt |
+
+Pour changer une photo, remplacer le fichier en gardant le même nom (JPEG, 1 600 px de large maximum). Pour en ajouter une, la déposer dans `photos/` puis ajouter une ligne `<figure>` dans la galerie de `index.html`.
+
+## Langues
+
+Le site existe en français (`index.html`) et en anglais (`en/index.html`). Un sélecteur **FR | EN** en haut à droite de la barre de navigation permet de passer de l'une à l'autre. Les deux pages déclarent leurs équivalents (`hreflang`) pour le référencement.
+
+Toute modification de contenu (texte, prix, équipements, photos) doit être faite **dans les deux fichiers**. Les photos, elles, sont communes : remplacer un fichier de `photos/` met à jour les deux langues.
+
+## Publication
+
+Le site est publié par GitHub Pages depuis la branche `main` (Settings → Pages → Deploy from a branch → `main` / `(root)`). Chaque `git push` sur `main` met le site à jour en 1 à 2 minutes.
+
+## Modifier le site
+
+- Petite retouche : ouvrir `index.html` (et `en/index.html`) sur GitHub, cliquer sur le crayon, puis « Commit ». Le site se met à jour tout seul.
+- Avec Claude Code : ouvrir le dossier du dépôt, demander la modification dans les deux langues, vérifier le résultat dans un navigateur, puis `git push`. Pour tester le changement de langue en local, il faut un petit serveur (par exemple `npx serve`), car les liens `/en/` ne fonctionnent pas en ouvrant directement le fichier.
+
+## À faire plus tard
+
+- Ajouter les étoiles de classement et le numéro d'enregistrement en mairie, une fois obtenus.
