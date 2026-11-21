@@ -4,7 +4,8 @@ Site d'une seule page (`index.html`), sans dépendance, hébergé gratuitement s
 
 - Dépôt : `auxGlovettes/site-studio`
 - Adresse du site : https://auxglovettes.fr (domaine défini dans le fichier `CNAME`, ne pas le supprimer)
-- Annonce : https://www.airbnb.com/h/foxyglovy
+- Annonce : https://www.airbnb.fr/h/foxyglovy (page française) et https://www.airbnb.com/h/foxyglovy (page anglaise)
+- Contact : contact@auxglovettes.fr (lien `mailto:` dans la section Réserver et dans les mentions légales des deux pages)
 
 ## Contenu du dépôt
 
