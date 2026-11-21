@@ -24,10 +24,13 @@ Les photos sont dans le dossier `photos/` (JPEG, 1 200 px de large, issues de l'
 |---|---|
 | `hero.jpg` | Image d'en-tête et aperçu lors d'un partage du lien |
 | `sejour.jpg` | Galerie : séjour et lit double |
-| `cabine.jpg` | Galerie : coin cabine avec lits superposés |
+| `alcove.jpg` | Galerie : alcôve et lit double |
+| `cabine.jpg`, `cabine-2.jpg` | Galerie : coin cabine, lits superposés et entrée |
+| `repas.jpg` | Galerie : coin repas |
 | `cuisine.jpg` | Galerie : cuisine |
-| `balcon.jpg` | Galerie : balcon |
-| `vue.jpg` | Galerie : vue sur la forêt |
+| `sdb-baignoire.jpg`, `sdb-lavabo.jpg`, `sdb-rangements.jpg` | Galerie : salle de bain (baignoire, lavabo et lave-linge, rangements) |
+| `balcon-2.jpg`, `balcon.jpg` | Galerie : balcon |
+| `vue.jpg`, `vue-hiver.jpg` | Galerie : vue en été et en hiver |
 
 Pour changer une photo, remplacer le fichier en gardant le même nom (JPEG, 1 600 px de large maximum). Pour en ajouter une, la déposer dans `photos/` puis ajouter une ligne `<figure>` dans la galerie de `index.html`.
 
