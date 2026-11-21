@@ -32,7 +32,11 @@ Les photos sont dans le dossier `photos/` (JPEG, 1 200 px de large, issues de l'
 | `balcon-2.jpg`, `balcon.jpg` | Galerie : balcon |
 | `vue.jpg`, `vue-hiver.jpg` | Galerie : vue en été et en hiver |
 
-Pour changer une photo, remplacer le fichier en gardant le même nom (JPEG, 1 600 px de large maximum). Pour en ajouter une, la déposer dans `photos/` puis ajouter une ligne `<figure>` dans la galerie de `index.html`.
+Pour changer une photo, remplacer le fichier en gardant le même nom (JPEG, 1 600 px de large maximum). Pour en ajouter une, la déposer dans `photos/` puis ajouter une ligne `<figure>` dans la galerie des **deux** pages (`index.html` et `en/index.html`).
+
+### Visionneuse
+
+Un clic (ou Entrée) sur une photo de la galerie l'affiche en grand, avec sa légende et un compteur. On navigue avec les flèches à l'écran, les touches ← et →, ou en balayant du doigt ; on ferme avec Échap, la croix ou un clic à côté. Elle est écrite en JavaScript simple (en bas de chaque page, sans bibliothèque) et prend automatiquement en compte toute nouvelle `<figure>` ajoutée à la galerie, sans rien d'autre à modifier. Les textes des boutons (Fermer, Photo suivante…) sont dans le bloc `<div class="lb">` de chaque page.
 
 ## Langues
 
